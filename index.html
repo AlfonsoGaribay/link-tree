@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.birds.min.js"></script>
+    <script>
+        window.addEventListener('DOMContentLoaded', () => {
+            VANTA.BIRDS({
+                el: "#vanta",
+                mouseControls: true,
+                touchControls: true,
+                gyroControls: false,
+                minHeight: 200.00,
+                minWidth: 200.00,
+                scale: 1.00,
+                scaleMobile: 1.00,
+                backgroundAlpha: 0.0,
+            })
+        })
+        setTimeout(()=>{
+            const main = document.querySelector('main')
+            main.style.opacity = 1
+            main.style.filter = 'blur(0px)'
+        },1000)
+        
+    </script>
+
+    <title> Alfonso Garibay - Links </title>
+</head>
+<body>
+    <div id="vanta">
+    <main>
+        <header>
+            <img src="/imgs/portrait-min.jpg" alt="profile-pic"/>
+            <h1>@AlfonsoGaribay</h1> 
+        </header>
+        <ul>
+            <li> 
+                <a href="http://alfonsogaribay.github.io">
+                    👨🏻‍💻 Personal Website
+                </a>
+            </li>
+            <li>
+                <a href="https://bosque-studio.webflow.io/">
+                    <img src="/imgs/bosque-logo.svg" alt="bosque-logo" width="20">
+                    Bosque 
+                </a> 
+            </li>
+            <li> 
+                <a href="https://github.com/AlfonsoGaribay">
+                    <img src="/imgs/github.svg" alt="bosque-logo" width="20">
+                    Github 
+                </a> 
+            </li>
+        </ul>
+    </main>
+</div>
+    
+</body>
+</html>
